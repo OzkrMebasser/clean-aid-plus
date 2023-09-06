@@ -2,26 +2,173 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* Estilos de body */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'font-secondary', sans-serif;
+  color: #666; /* Cambia el color de texto a tu preferencia */
+  background-color: #e5e5e5;
+}
+
+/* Estilos de encabezados h1 - h6 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'font-primary', sans-serif;
+  color: #888; /* Cambia el color de texto a tu preferencia */
+  font-weight: bold; /* Aplica negrita */
+}
+
+/* Estilos específicos para cada tamaño de encabezado */
+.h1 {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.h2 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.h3 {
+  font-size: 38px;
+  line-height: 46px;
+}
+
+.h4 {
+  font-size: 30px;
+  line-height: 46px;
+}
+
+.h5 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.h6 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+/* Estilos de texto body-sm, body-md, body-lg */
+.text-body-sm {
+  font-family: 'font-secondary', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: normal;
+}
+
+.text-body-md {
+  font-family: 'font-secondary', sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: normal;
+}
+
+.text-body-lg {
+  font-family: 'font-secondary', sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+/* Estilos para botones y enlaces */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000; /* Cambia el borde a tu preferencia */
+  border-radius: 1px; /* Ajusta el radio de borde según tu preferencia */
+}
+
+.btn-sm {
+  font-family: 'font-primary', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  height: 42px;
+  padding: 0 30px;
+  letter-spacing: 1px;
+}
+
+.btn-lg {
+  font-family: 'font-primary', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  height: 46px;
+  padding: 0 40px;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Cambia el color de fondo a tu preferencia */
+  color: #fff; /* Cambia el color de texto a tu preferencia */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-secondary {
+  background-color: #fff; /* Cambia el color de fondo a tu preferencia */
+  color: #888; /* Cambia el color de texto a tu preferencia */
+  border: 1px solid #888; /* Cambia el color del borde a tu preferencia */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.link {
+  font-family: 'font-primary', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #888; /* Cambia el color de texto a tu preferencia */
+}
+
+/* Estilos para secciones */
+.section {
+  padding-bottom: 80px; /* Cambia el espacio inferior a tu preferencia */
+}
+
+.section-title-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px; /* Cambia el margen inferior a tu preferencia */
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+}
+/*Nav underline effect */
+
+.text-shadow{
+text-shadow: #000 1px 0 10px;
+}
+
+.underline-hover-effect {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.underline-hover-effect {
+  display: inline-block;
+  padding-bottom: 0.25rem; /* defines the space between text and underline */
+  position: relative;
+}
+
+.underline-hover-effect::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.25s ease-out;
+}
+.underline-hover-effect:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
 }
