@@ -20,17 +20,17 @@ const NavMobile = ({ navMobile }) => {
         })} */}
 
         <li>
-          <a className="text-white text-body-md" href="">
+          <a className="text-white text-body-md" href="#">
             Home
           </a>
         </li>
         <li>
-          <a className="text-white text-body-md" href="">
+          <a className="text-white text-body-md" href="#">
             Home
           </a>
         </li>
         <li>
-          <a className="text-white text-body-md" href="">
+          <a className="text-white text-body-md" href="#">
             Home
           </a>
         </li>

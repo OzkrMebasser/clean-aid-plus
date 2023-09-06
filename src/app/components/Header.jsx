@@ -49,7 +49,7 @@ const Header = () => {
         isActive ? " bg-[#fff] py-[16px]" : "bg-transparent py-[20px] text-shadow"
       } fixed max-w-[1440px] left-0 right-0 mx-auto flex justify-between items-center px-[20px] lg:px-[80px] z-30 transition-all duration-300`}
     >
-      <a href="">
+      <a href="#">
         <img className="h-14" src={ chgLogo ? blueLogo : greenLogo } alt="logo" />
       </a>
      {/* desktop Navigation */}
