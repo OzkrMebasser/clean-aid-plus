@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useState } from "react";
-// import {header} from "../utils/data";
+
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
@@ -53,7 +53,8 @@ const Header = () => {
         <img className="h-14" src={ chgLogo ? blueLogo : greenLogo } alt="logo" />
       </a>
      {/* desktop Navigation */}
-      <Nav textColor={textColor} />
+      {/* <Nav textColor={textColor} /> */}
+      <Nav  />
 
       {/* <div className='hidden lg:flex space-x-4'>
       <button className="btn btn-sm text-white hover:text-primary-200 transition" >{btnLoginText}</button>

@@ -1,10 +1,10 @@
 "use client"
-import JoinImg from '../assets/img/join/woman.png';
+import joinImg from '../../../public/assets/img/join/woman.png';
 
-// import { join } from "../utils/data";
+
 
 const Join = () => {
-  // const { image, title, subtitle, btnText } = join;
+
   return (
     <section className='bg-neutral-500 min-h-[537px]'>
       <div className='container mx-auto'>
@@ -17,7 +17,7 @@ const Join = () => {
             data-aos-offset='100'
             data-aos-delay='200'
           >
-            <img src={JoinImg} alt='' />
+            <img src={joinImg} alt='d' />
           </div>
           {/* text */}
           <div

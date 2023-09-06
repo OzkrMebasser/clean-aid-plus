@@ -32,10 +32,7 @@ module.exports = {
         },
         page: '#fcfcff',
       },
-      backgroundImage: {
-        banner: "url('https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/profesionalCleaning2.jpeg?alt=media&token=aae89a00-438b-4f0f-a6b3-f414669a6414')",
-        faq: "url('/src/assets/img/faq/bg.svg')",
-      },
+  
       backgroundSize: {
         auto: 'auto',
         cover: 'cover',

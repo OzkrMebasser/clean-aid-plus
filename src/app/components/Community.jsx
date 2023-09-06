@@ -1,33 +1,34 @@
 "use client"
-// import { community } from "../utils/data";
-import CommunityImg1 from '../assets/img/community/img1.png';
-import CommunityImg2 from '../assets/img/community/img2.png';
-import CommunityImg3 from '../assets/img/community/img3.png';
-import CommunityImg4 from '../assets/img/community/img4.png';
-import CommunityIcn from '../assets/img/community/icons/community-icn.svg';
+
+import communityImg1 from '../../../public/assets/img/community/img1.png';
+import communityImg2 from '../../../public/assets/img/community/img2.png';
+import communityImg3 from '../../../public/assets/img/community/img3.png';
+import communityImg4 from '../../../public/assets/img/community/img4.png';
+import communityIcn from '../../../public/assets/img/community/icons/community-icn.svg';
 
 import CommunitySlider from './CommunitySlider';
+
 const  testimonials = [
   {
-    image: CommunityImg1,
+    image: communityImg1,
     name: 'Mark A.',
     message:
       '“Great location, great price and great, helpful people. What to want more?”',
   },
   {
-    image: CommunityImg2,
+    image: communityImg2,
     name: 'Lauren K.',
     message:
       '“Gymme changed my life. Not only physically but mentally as well. I’m a better mother, and all around better human being because of this gym.”',
   },
   {
-    image: CommunityImg3,
+    image: communityImg3,
     name: 'Jhon D.',
     message:
       '“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”',
   },
   {
-    image: CommunityImg4,
+    image: communityImg4,
     name: 'Anne R.',
     message:
       '“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”',
@@ -36,7 +37,6 @@ const  testimonials = [
 
 const Community = () => {
 
-  // const { icon, title, testimonials } = community;
   return (
     <section className='section relative'>
       <div className='container mx-auto'>
@@ -48,7 +48,7 @@ const Community = () => {
             data-aos-offset='200'
             data-aos-delay='200'
           >
-            <img src={CommunityIcn} alt='' />
+            <img src={communityIcn} alt='' />
             <h2 className='h2 section-title'>
             Community <span className='text-primary-200'>.</span>
             </h2>

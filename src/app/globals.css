@@ -172,3 +172,11 @@ text-shadow: #000 1px 0 10px;
   left: 0;
   right: auto;
 }
+
+.bg-banner {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/cleaningGirl.jpg?alt=media&token=855f33ca-6137-4a90-bac4-8c377fd2f758');
+}
+.bgFaq{
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/faqbg.svg?alt=media&token=498132aa-0eec-4ae8-9ba3-15a616770403');
+
+}

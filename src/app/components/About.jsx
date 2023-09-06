@@ -1,11 +1,12 @@
 "use client"
-// import { about } from "../utils/data";
+
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 // icons
-import UsersIcn from '../assets/img/about/icons/users-icn.svg';
+import usersIcn from '../../../public/assets/img/about/icons/users-icn.svg';
+const blueLogo = "https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/textBlueLogo.png?alt=media&token=41c8690e-2125-4f30-8383-1d689c8bce01";
 
 const About = () => {
-  // const { title, icon, link, subtitle1, subtitle2 } = about;
+ 
   return <section className='py-[80px] md:py-[110px] lg:pt-[140px] lg:pb-[180px]'>
     <div className='container mx-auto px-[20px] lg:px-[135px]'>
 
@@ -14,17 +15,19 @@ const About = () => {
         data-aos='fade-up'
         data-aos-delay='100'
       >
-        <img src={UsersIcn} alt='' />
+        <img src={usersIcn} alt='Mission' />
         <h2 className='h2 section-title'>
-        Our misson<span className='text-primary-200'>.</span>
+        About us<span className='text-primary-200'>.</span>
         </h2>
       </div>
+     
       <p
         className='md:text-body-md mb-12'
         data-aos='fade-up'
         data-aos-delay='200'
       >
-       We are distinguished by our unsurpassed motivating atmosphere, knowledgeable staff, and premier exercise equipment, which supports our members in meeting their individual fitness goals.
+       <img className="h-5 inline" src={blueLogo} alt="" /> 
+       is a cleaning company that prides itself on quality and consistency. There is not a cleaner on our team that is not trained, therefore our clients can expect to have the same quality of cleaning regardless of the cleaner that we send to your home or building. We are dedicated to bringing the highest level of cleaning to your home, with maintenance services that cover everything inside the home. 
       </p>
       <p
         className='md:text-body-md mb-8'

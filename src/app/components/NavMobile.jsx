@@ -1,5 +1,4 @@
 "use client";
-// import { nav } from "../utils/data";
 
 const NavMobile = ({ navMobile }) => {
   return (
@@ -9,15 +8,7 @@ const NavMobile = ({ navMobile }) => {
       } w-full fixed top-0 left-0 right-0 bg-neutral-500 -bottom-12 -z-10 lg:hidden overflow-hidden transition-all h-0`}
     >
       <ul className="w-full top-0 left-0 h-full flex flex-col justify-center items-center gap-y-8">
-        {/* {nav.map((item, idx) => {
-          return (
-            <li key={idx}>
-              <a className='text-white text-body-md' href={item.href}>
-                {item.name}
-              </a>
-            </li>
-          );
-        })} */}
+    
 
         <li>
           <a className="text-white text-body-md" href="#">

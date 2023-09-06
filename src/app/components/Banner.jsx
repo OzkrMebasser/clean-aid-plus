@@ -1,8 +1,7 @@
 "use client"
-// import { banner } from "../utils/data";
 
 const Banner = () => {
-  // const { titlePart1, titlePart2, subtitle, textBtn } = banner;
+ 
   return (
     <section className="bg-neutral-500 h-[790px]">
       <div className="container mx-auto h-full">
@@ -12,7 +11,7 @@ const Banner = () => {
               className="h1 text-white mb-8"
               data-aos="fade-down"
               data-aos-delay="500">
-              Trusted Cleaning Services for Homes and Businesses Across Victoria
+              Trusted <span className='text-primary-200'>Cleaning Services</span> for Homes and Businesses Across Victoria
               
                <br />
               {/* <span className="text-primary-200">{titlePart2}</span> */}

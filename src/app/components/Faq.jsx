@@ -1,7 +1,7 @@
 "use client"
 
-// import { faq } from "../utils/data";
-import QuestionMarkIcn from '../assets/img/faq/icons/question-mark.svg';
+
+import questionMarkIcn from '../../../public/assets/img/faq/icons/question-mark.svg';
 
 
 import Accordion from './Accordion';
@@ -41,10 +41,9 @@ const accordions= [
 
 const Faq = () => {
 
-  // const { icon, title, accordions } = faq;
   return (
     <section className='section pt-[480px] lg:pt-[280px] mb-[80px] lg:mb-0'>
-      <div className='max-w-[768px] mx-auto lg:bg-faq bg-no-repeat bg-custom bg-center lg:h-[1160px] lg:pt-6'>
+      <div className='max-w-[768px] mx-auto lg: bg-no-repeat bg-custom bg-center lg:h-[1160px] lg:pt-6'>
         {/* section title */}
         <div
           className='section-title-group justify-start lg:justify-center -space-x-4 lg:max-w-[540px] mx-auto px-4 lg:px-0'
@@ -52,7 +51,7 @@ const Faq = () => {
           data-aos-offset='200'
           data-aos-delay='200'
         >
-          <img className='lg:hidden' src={QuestionMarkIcn} alt='' />
+          <img className='lg:hidden' src={questionMarkIcn} alt='' />
           <h2 className='h2 section-title lg:mt-[100px]'>
           FAQ<span className='text-primary-200'>.</span>
           </h2>

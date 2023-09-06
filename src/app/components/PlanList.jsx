@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { BsCheckCircleFill } from 'react-icons/bs';
 
 
-//refactoring pending
+
 const PlanList = ({ plans }) => {
     const [index, setIndex] = useState(0);
   return (

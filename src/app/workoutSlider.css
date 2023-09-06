@@ -16,11 +16,11 @@
 
 .workoutSlider .swiper-button-prev {
   left: 88.4%;
-  background-image: url('../app/assets/img/workouts/icons/chevron-left.svg');
+  background-image: url('../../public/assets/img/workouts/icons/chevron-left.svg');
 }
 
 .workoutSlider .swiper-button-next {
-  background-image: url('../app/assets/img/workouts/icons/chevron-right.svg');
+  background-image: url('../../public/assets/img/workouts/icons/chevron-right.svg');
   right: 66px;
 }
 

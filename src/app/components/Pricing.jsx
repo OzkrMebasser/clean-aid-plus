@@ -1,6 +1,6 @@
 "use client"
-// import { pricing } from "../utils/data";
-import PriceIcn from '../assets/img/pricing/icons/price.svg';
+
+import priceIcn from '../../../public/assets/img/pricing/icons/price.svg';
 
 import PlanList from './PlanList';
 
@@ -42,7 +42,7 @@ const plans = [
 
 const Pricing = () => {
 
-  // const { icon, title, plans } = pricing;
+
   return (
     <section className='section'>
       <div
@@ -51,7 +51,7 @@ const Pricing = () => {
         data-aos-offset='200'
         data-aos-delay='200'
       >
-        <img src={PriceIcn} alt='' />
+        <img src={priceIcn} alt='' />
         <h2 className='h2 section-title'>
         Pricing plan <span className='text-primary-200'>.</span>
         </h2>

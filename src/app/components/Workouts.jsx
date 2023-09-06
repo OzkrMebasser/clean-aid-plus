@@ -1,12 +1,12 @@
 "use client"
-// import { workouts } from "../utils/data";
-import CalendarIcn from '../assets/img/workouts/icons/calendar.svg';
+import WorkoutSlider from "../components/WorkoutSlider"
+import calendarIcn from '../../../public/assets/img/workouts/icons/calendar.svg';
 
-import WorkoutSlider from "../workoutSlider.css";
+import "../workoutSlider.css";
 
 const Workouts = () => {
   
-  // const { title, icon } = workouts;
+ 
   return (
     <section className='section'>
       {/* section title */}
@@ -15,7 +15,7 @@ const Workouts = () => {
         data-aos='fade-up'
         data-aos-delay='200'
       >
-        <img src={CalendarIcn} alt='' />
+        <img src={calendarIcn} alt='' />
         <h2 className='h2 section-title'>
         Training programs <span className='text-primary-200'>.</span>
         </h2>

@@ -1,52 +1,54 @@
 "use client"
-// import { workouts } from "../utils/data";
-import ResistanceImg from '../assets/img/workouts/resistance.png';
-import BoxingImg from '../assets/img/workouts/boxing.png';
-import BodyPumpImg from '../assets/img/workouts/body-pump.png';
-import YogaImg from '../assets/img/workouts/yoga.png';
-import FullBodyImg from '../assets/img/workouts/full-body.png';
-import FitnessImg from '../assets/img/workouts/fitness.png';
-import BattleRopeImg from '../assets/img/workouts/battle-rope.png';
+
+import resistanceImg from '../../../public/assets/img/workouts/resistance.png';
+import boxingImg from '../../../public/assets/img/workouts/boxing.png';
+import bodyPumpImg from '../../../public/assets/img/workouts/body-pump.png';
+import yogaImg from '../../../public/assets/img/workouts/yoga.png';
+import fullBodyImg from '../../../public/assets/img/workouts/full-body.png';
+import fitnessImg from '../../../public/assets/img/workouts/fitness.png';
+import battleRopeImg from '../../../public/assets/img/workouts/battle-rope.png';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
+import 'swiper/swiper-bundle.css'; // Import the main Swiper CSS file
+// import 'swiper/components/navigation/navigation.css'; // Import additional CSS for Swiper's navigation component
+
+
 import '../workoutSlider.css';
-import { Navigation } from 'swiper';
+// import { Navigation } from 'swiper';
 
 const programs = [
   {
-    image: ResistanceImg,
+    image: resistanceImg,
     name: 'Resistance',
   },
   {
-    image: BoxingImg,
+    image: boxingImg,
     name: 'Boxing',
   },
   {
-    image: BodyPumpImg,
+    image: bodyPumpImg,
     name: 'Body Pump',
   },
   {
-    image: YogaImg,
+    image: yogaImg,
     name: 'Yoga',
   },
   {
-    image: FullBodyImg,
+    image: fullBodyImg,
     name: 'Full Body',
   },
   {
-    image: FitnessImg,
+    image: fitnessImg,
     name: 'Fitness',
   },
   {
-    image: BattleRopeImg,
+    image: battleRopeImg,
     name: 'Battle Rope',
   },
 ]
 
 const WorkoutSlider = () => {
-  // const { programs } = workouts;
+ 
   return (
     <Swiper
       slidesPerView={2}
