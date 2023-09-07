@@ -1,34 +1,36 @@
 "use client"
+import { BiPlusMedical } from "react-icons/bi";
 
-import communityImg1 from '../../../public/assets/img/community/img1.png';
-import communityImg2 from '../../../public/assets/img/community/img2.png';
-import communityImg3 from '../../../public/assets/img/community/img3.png';
-import communityImg4 from '../../../public/assets/img/community/img4.png';
-import communityIcn from '../../../public/assets/img/community/icons/community-icn.svg';
 
-import CommunitySlider from './CommunitySlider';
+const testimoniaOne = "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1600";
+const testimoniaTwo = "https://images.pexels.com/photos/5490235/pexels-photo-5490235.jpeg?auto=compress&cs=tinysrgb&w=1600";
+const testimoniaThree = "";
+const testimoniaFour = "";
+
+
+import TestimoniaslSlider from './TestimoniaslSlider';
 
 const  testimonials = [
   {
-    image: communityImg1,
+    image: testimoniaOne,
     name: 'Mark A.',
     message:
       '“Great location, great price and great, helpful people. What to want more?”',
   },
   {
-    image: communityImg2,
+    image: testimoniaTwo,
     name: 'Lauren K.',
     message:
       '“Gymme changed my life. Not only physically but mentally as well. I’m a better mother, and all around better human being because of this gym.”',
   },
   {
-    image: communityImg3,
+    image: testimoniaThree,
     name: 'Jhon D.',
     message:
       '“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”',
   },
   {
-    image: communityImg4,
+    image: testimoniaFour,
     name: 'Anne R.',
     message:
       '“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”',
@@ -43,15 +45,18 @@ const Community = () => {
         <div className='flex'>
           {/* section title */}
           <div
-            className='section-title-group max-w-[240px] px-4 lg:px-0 lg:ml-0 mx-auto'
+            className='mt-4 section-title-group max-w-[240px] px-4 lg:px-0 lg:ml-0 mx-auto'
             data-aos='fade-up'
             data-aos-offset='200'
             data-aos-delay='200'
           >
-            <img src={communityIcn} alt='' />
-            <h2 className='h2 section-title'>
-            Community <span className='text-primary-200'>.</span>
-            </h2>
+            
+            <h2 className="h2 section-title uppercase font-black">
+           Testimonials
+            <span className="text-[#147EFB]">
+              <BiPlusMedical className="text-lg" />
+            </span>
+          </h2>
           </div>
           
           <div
@@ -60,7 +65,7 @@ const Community = () => {
             data-aos-offset='200'
             data-aos-delay='300'
           >
-            <CommunitySlider testimonials={testimonials} />
+            <TestimoniaslSlider testimonials={testimonials} />
           </div>
         </div>
       </div>

@@ -1,8 +1,10 @@
 "use client"
 import { useState, useEffect } from "react";
-
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Nav = () => {
+  const router = useRouter();
 
   const [textColor, setTextColor] = useState(false);
 
@@ -30,11 +32,12 @@ const Nav = () => {
   return ( 
     <nav className={`${textColor ? 'hidden lg:flex gap-x-4 font-bold ': 'hidden lg:flex gap-x-4 font-bold text-[#147EFB]'} `}>
 
-<a  href="#" className="underline-hover-effect-green  hover:text-[#147EFB] transition">Home</a>
-<a  href="#" className="underline-hover-effect-green  hover:text-[#147EFB] transition">About</a>
+<Link  href="/" className="underline-hover-effect-green  hover:text-[#147EFB] transition">Home</Link>
+<Link  href="/about" className="underline-hover-effect-green  hover:text-[#147EFB] transition">About</Link>
 <a  href="#" className="underline-hover-effect-green  hover:text-[#147EFB] transition">Services</a>
+<Link  href="/blog" className="underline-hover-effect-green  hover:text-[#147EFB] transition">Blog</Link>
 <a  href="#" className="underline-hover-effect-green  hover:text-[#147EFB] transition">Contact</a>
-<a  href="#" className="underline-hover-effect-green  hover:text-[#147EFB] transition">Home</a>
+
 
     </nav>
   )

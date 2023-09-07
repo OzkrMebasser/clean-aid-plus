@@ -1,6 +1,11 @@
 "use client";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 
 const NavMobile = ({ navMobile }) => {
+  const router = useRouter();
+
   return (
     <nav
       className={`${
@@ -11,26 +16,32 @@ const NavMobile = ({ navMobile }) => {
     
 
         <li>
-          <a className="text-white text-body-md" href="#">
+          <Link className="text-white text-body-md" href="/">
             Home
-          </a>
+          </Link>
+        </li>
+        <li>
+          <Link className="text-white text-body-md" href="/about">
+            About
+          </Link>
         </li>
         <li>
           <a className="text-white text-body-md" href="#">
-            Home
+            Services
           </a>
         </li>
         <li>
+          <Link className="text-white text-body-md" href="/blog">
+            Blog
+          </Link>
+        </li>
+        <li>
           <a className="text-white text-body-md" href="#">
-            Home
+            Contact
           </a>
         </li>
       </ul>
-      {/* buttons */}
-      {/* <div className='-mt-44 flex justify-center gap-x-8'>
-        <button className='btn btn-lg text-white'>Log in</button>
-        <button className='btn btn-lg btn-primary'>Sign up</button>
-      </div> */}
+      
     </nav>
   );
 };

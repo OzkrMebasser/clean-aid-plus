@@ -10,10 +10,10 @@ import Header from './components/Header';
 import About from './components/About';
 import Residential from './components/Residential';
 import Janitorial from './components/Janitorial'
-import Pricing from './components/Pricing';
-import Community from './components/Community';
+// import Pricing from './components/Pricing';
+import Testimonials from './components/Testimonials';
 
-import Join from './components/Join';
+import CallUsNow from './components/CallUsNow';
 import Footer from './components/Footer';
 
 export default function Home() {
@@ -32,10 +32,10 @@ export default function Home() {
       <About />
       <Residential />
       <Janitorial/>
-      <Pricing />
-      <Community />
+      {/* <Pricing /> */}
+      {/* <Testimonials /> */}
      
-      <Join />
+      <CallUsNow />
       <Footer />
       {/* <div className='h-[4000px]'></div> */}
     </div>
