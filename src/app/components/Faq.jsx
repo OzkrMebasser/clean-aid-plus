@@ -1,39 +1,39 @@
 "use client"
 
+import { BiPlusMedical } from "react-icons/bi";
 
-import questionMarkIcn from '../../../public/assets/img/faq/icons/question-mark.svg';
 
 
 import Accordion from './Accordion';
 
 const accordions= [
   {
-    question: 'How can I book a workout class?',
+    question: 'Question number One?',
     answer:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
   },
   {
-    question: 'Can I pay by cash for my membership?',
+    question: 'Question number Two?',
     answer:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
   },
   {
-    question: 'What age do I need to be to join?',
+    question: 'Question number There?',
     answer:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
   },
   {
-    question: 'Are there any lockers?',
+    question: 'Question number Four?',
     answer:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
   },
   {
-    question: 'How do I cancel my membership?',
+    question: 'Question number Five?',
     answer:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
   },
   {
-    question: 'Is there water available at the gym?',
+    question: 'Question number Six?',
     answer:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
   },
@@ -42,8 +42,8 @@ const accordions= [
 const Faq = () => {
 
   return (
-    <section className='section pt-[480px] lg:pt-[280px] mb-[80px] lg:mb-0'>
-      <div className='max-w-[768px] mx-auto lg: bg-no-repeat bg-custom bg-center lg:h-[1160px] lg:pt-6'>
+    <section className='section mt-[50px]  mb-[80px] lg:mb-0'>
+      <div className='max-w-[768px] mx-auto lg: bg-no-repeat bg-custom bg-center  '>
         {/* section title */}
         <div
           className='section-title-group justify-start lg:justify-center -space-x-4 lg:max-w-[540px] mx-auto px-4 lg:px-0'
@@ -51,9 +51,9 @@ const Faq = () => {
           data-aos-offset='200'
           data-aos-delay='200'
         >
-          <img className='lg:hidden' src={questionMarkIcn} alt='' />
+         
           <h2 className='h2 section-title lg:mt-[100px]'>
-          FAQ<span className='text-primary-200'>.</span>
+          FAQ<span className='text-[#147EFB]'><BiPlusMedical className="text-lg"/></span>
           </h2>
         </div>
         <div

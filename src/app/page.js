@@ -8,10 +8,11 @@ import 'aos/dist/aos.css';
 import Banner from "./components/Banner";
 import Header from './components/Header';
 import About from './components/About';
-import Workouts from './components/Workouts';
+import Residential from './components/Residential';
+import Janitorial from './components/Janitorial'
 import Pricing from './components/Pricing';
 import Community from './components/Community';
-import Faq from './components/Faq';
+
 import Join from './components/Join';
 import Footer from './components/Footer';
 
@@ -29,10 +30,11 @@ export default function Home() {
       <Header />
       <Banner />
       <About />
-      <Workouts />
+      <Residential />
+      <Janitorial/>
       <Pricing />
       <Community />
-      <Faq />
+     
       <Join />
       <Footer />
       {/* <div className='h-[4000px]'></div> */}

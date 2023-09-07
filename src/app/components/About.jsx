@@ -1,8 +1,12 @@
 "use client"
 
-import { IoIosArrowDroprightCircle } from "react-icons/io";
 // icons
-import usersIcn from '../../../public/assets/img/about/icons/users-icn.svg';
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { BiPlusMedical } from "react-icons/bi";
+
+
+
+
 const blueLogo = "https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/textBlueLogo.png?alt=media&token=41c8690e-2125-4f30-8383-1d689c8bce01";
 
 const About = () => {
@@ -15,14 +19,14 @@ const About = () => {
         data-aos='fade-up'
         data-aos-delay='100'
       >
-        <img src={usersIcn} alt='Mission' />
-        <h2 className='h2 section-title'>
-        About us<span className='text-primary-200'>.</span>
+    
+        <h2 className='h2 section-title uppercase font-black'>
+        About us<span className='text-[#147EFB]'><BiPlusMedical className="text-lg"/></span>
         </h2>
       </div>
      
       <p
-        className='md:text-body-md mb-12'
+        className='md:text-body-md mb-6'
         data-aos='fade-up'
         data-aos-delay='200'
       >
@@ -34,17 +38,24 @@ const About = () => {
         data-aos='fade-up'
         data-aos-delay='300'
       >
-        The strength of our heart-felt identity is utilized to inspire every person that steps foot into our gyms to better themselves.
+        Our purpose is to provide our clients with the best level of customer service with the latest practices in cleaning practices. We use exclusively green products in every area of the home, to ensure the safety for everyone in the building or household including your pets. 
       </p>
-      <div data-aos='fade-up' data-aos-delay='400'>
+
+      <button
+              className="bg-[#147EFB] text-white rounded-lg px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+              data-aos="fade-down"
+              data-aos-delay="700">
+              Learn More <IoIosArrowDroprightCircle className="text-2xl inline ml-2 align-middle" />
+            </button>
+      {/* <div data-aos='fade-up' data-aos-delay='400'>
         <a
-          className='link flex items-center gap-x-4 hover:gap-x-6 transition-all'
+          className='bg-[#147EFB] text-white rounded-lg px-4 py-2 link flex items-center gap-x-4 hover:gap-x-6 transition-all'
           href='#'
         >
           Call Now!
           <IoIosArrowDroprightCircle className='text-2xl' />
         </a>
-      </div>
+      </div> */}
     </div>
   </section>
 };

@@ -145,36 +145,58 @@ h1, h2, h3, h4, h5, h6 {
 text-shadow: #000 1px 0 10px;
 }
 
-.underline-hover-effect {
+.shining {
+
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #0eb050, #ffffff, #0eb050);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(231, 6, 6, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -100%;
+  }
+ 
+  100% {
+    background-position: 500%;
+  }
+}
+
+.underline-hover-effect-green {
   text-decoration: none;
   color: inherit;
 
 }
 
-.underline-hover-effect {
+.underline-hover-effect-green {
   display: inline-block;
   padding-bottom: 0.25rem; /* defines the space between text and underline */
   position: relative;
 }
 
-.underline-hover-effect::before {
+.underline-hover-effect-green::before {
   content: "";
   position: absolute;
   right: 0;
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: #14fb72;
   transition: width 0.25s ease-out;
 }
-.underline-hover-effect:hover::before {
+.underline-hover-effect-green:hover::before {
   width: 100%;
   left: 0;
   right: auto;
 }
 
 .bg-banner {
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/cleaningGirl.jpg?alt=media&token=855f33ca-6137-4a90-bac4-8c377fd2f758');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/cleaningGirls.jpg?alt=media&token=065b0b42-f179-49f8-82be-d5dbc809eab5');
 }
 .bgFaq{
   background-image: url('https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/faqbg.svg?alt=media&token=498132aa-0eec-4ae8-9ba3-15a616770403');

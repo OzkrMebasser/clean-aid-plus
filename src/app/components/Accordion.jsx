@@ -15,9 +15,9 @@ const Accordion = ({ accordion }) => {
           <h6 className='h6'>{question}</h6>
           <div>
             {isOpen ? (
-              <FaChevronCircleUp className='text-[20px] text-neutral-500' />
+              <FaChevronCircleUp className='text-[20px] text-[#414442]' />
             ) : (
-              <FaChevronCircleDown className='text-[20px] text-neutral-500' />
+              <FaChevronCircleDown className='text-[20px] text-[#147EFB]' />
             )}
           </div>
         </div>

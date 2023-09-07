@@ -10,7 +10,7 @@ import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 const Header = () => {
 
   const blueLogo = "https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/blueLogoCleanAid.png?alt=media&token=c12abe93-174e-4a7f-89cb-ea1717912eff";
-  const greenLogo = "https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/greenLogoCleanAid.png?alt=media&token=f5d24ae3-8a90-49e4-9a88-3a056a0054b0";
+  const greenLogo = "https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/greenLogoCleanAid.png?alt=media&token=5ff7e321-3171-4a15-b2f0-87bd5fe54f71";
 
 
   const [isActive, setIsActive] = useState(false);
@@ -46,11 +46,11 @@ const Header = () => {
   return (
     <header
       className={`${
-        isActive ? " bg-[#fff] py-[16px]" : "bg-transparent py-[20px] text-shadow"
+        isActive ? " bg-[#ffffff] py-[16px]" : "py-[20px] "
       } fixed max-w-[1440px] left-0 right-0 mx-auto flex justify-between items-center px-[20px] lg:px-[80px] z-30 transition-all duration-300`}
     >
       <a href="#">
-        <img className="h-14" src={ chgLogo ? blueLogo : greenLogo } alt="logo" />
+        <img className="h-14" src={ !chgLogo ? blueLogo : greenLogo } alt="logo" />
       </a>
      {/* desktop Navigation */}
       {/* <Nav textColor={textColor} /> */}
@@ -62,12 +62,12 @@ const Header = () => {
     </div> */}
       <div
         onClick={() => setNavMobile(!navMobile)}
-        className="lg:hidden absolute right-4"
+        className="lg:hidden absolute right-4 text-shadow"
       >
         {navMobile ? (
-          <RiCloseFill className={`${!textColor ? "text-3xl text-[#14fb72] cursor-pointer" : "text-3xl text-[#2a3cfb] cursor-pointer"}`} />
+          <RiCloseFill className={`${textColor ? " text-3xl text-[#0eb050] cursor-pointer" : "text-3xl text-[#147EFB] cursor-pointer"}`} />
         ) : (
-          <RiMenu4Fill className={`${!textColor ? "text-3xl text-[#14fb72] cursor-pointer" : "text-3xl text-[#2a3cfb] cursor-pointer"}`} />
+          <RiMenu4Fill className={`${textColor ? " text-3xl text-[#0eb050] cursor-pointer" : "text-3xl text-[#147EFB] cursor-pointer"}`} />
         )}
       </div>
 
