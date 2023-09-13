@@ -55,20 +55,12 @@ const About = () => {
           className="bg-[#147EFB] text-white rounded-lg px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
           data-aos="fade-down"
           data-aos-delay="700"
-          onClick={() => router.push(`about`)}
+          // onClick={() => router.push(`about`)}
         >
-          Learn More{" "}
+         <Link href="/about"> Learn More{" "}</Link>
           <IoIosArrowDroprightCircle className="text-2xl inline ml-2 align-middle" />
         </button>
-        {/* <div data-aos='fade-up' data-aos-delay='400'>
-        <a
-          className='bg-[#147EFB] text-white rounded-lg px-4 py-2 link flex items-center gap-x-4 hover:gap-x-6 transition-all'
-          href='#'
-        >
-          Call Now!
-          <IoIosArrowDroprightCircle className='text-2xl' />
-        </a>
-      </div> */}
+     
       </div>
     </section>
   );

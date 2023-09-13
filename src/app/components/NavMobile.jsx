@@ -26,9 +26,9 @@ const NavMobile = ({ navMobile }) => {
           </Link>
         </li>
         <li>
-          <a className="text-white text-body-md" href="#">
+          <Link className="text-white text-body-md" href="/services">
             Services
-          </a>
+          </Link>
         </li>
         <li>
           <Link className="text-white text-body-md" href="/blog">

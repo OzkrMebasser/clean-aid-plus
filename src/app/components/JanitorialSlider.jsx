@@ -14,22 +14,22 @@ import 'swiper/swiper-bundle.css'; // Import the main Swiper CSS file
 import '../workoutSlider.css';
 // import { Navigation } from 'swiper';
 
-const programs = [
+const services = [
   {
     image: moveOutCleaning,
-    name: 'Move-out Cleaning',
+    name: 'Offices Buildings',
   },
   {
     image: oneTimeCleaning,
-    name: 'One-time Cleaning',
+    name: 'Strata Buildings',
   },
   {
     image: recurringCleaning,
-    name: 'Recurring Cleaning',
+    name: 'Carpet Cleaning',
   },
   {
     image: carpetCleaning,
-    name: 'Carpet Cleaning',
+    name: 'Other Cleaning',
   },
   
 ]
@@ -51,7 +51,7 @@ const WorkoutSlider = () => {
       }}
       className='workoutSlider'
     >
-      {programs.map((program, idx) => {
+      {services.map((program, idx) => {
         const { image, name } = program;
         return (
           <SwiperSlide

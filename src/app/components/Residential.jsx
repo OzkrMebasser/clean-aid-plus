@@ -18,7 +18,7 @@ const Workouts = () => {
       >
  
         <h2 className='h2 section-title uppercase font-black'>
-        Residential<span className='text-[#147EFB]'><BiPlusMedical className="text-lg"/></span>
+        Our Services<span className='text-[#147EFB]'><BiPlusMedical className="text-lg"/></span>
         </h2>
       </div>
       <div data-aos='fade-up' data-aos-delay='300'>

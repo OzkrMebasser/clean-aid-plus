@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Header from "../components/Header";
+import Benefits from "../components/Befefits";
 import Footer from "../components/Footer";
 // icons
 import { IoIosArrowDroprightCircle } from "react-icons/io";
@@ -23,7 +24,7 @@ const Aboutpage = () => {
     
 
   return(
-    <div className="bg-[#e5e5e5]">
+    <div className="bg-[#f8f8f8]">
     <Header/>
    
     <section className='py-[80px] md:py-[110px] lg:pt-[140px] lg:pb-[180px]'>
@@ -82,10 +83,9 @@ const Aboutpage = () => {
               <IoIosArrowDroprightCircle className="text-2xl inline ml-2 align-middle" />
             </button>
 
-
-
     </div>
   </section>
+  <Benefits/>
   <Faq/>
   <Footer/>
     </div>

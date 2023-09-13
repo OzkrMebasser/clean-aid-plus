@@ -1,10 +1,11 @@
 "use client"
 
-
+//R
 const moveOutCleaning = "https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/Residential%2FmoveOutCleaning.jpeg?alt=media&token=4af16815-6504-44fe-9465-a54602038b0a";
 const oneTimeCleaning = "https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/Residential%2FoneTimeCleaning.jpg?alt=media&token=2b547a57-beda-4c7f-8127-a5b09f1ce80e";
 const recurringCleaning = "https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/Residential%2FrecurringCleaning.jpg?alt=media&token=c0758531-036a-420e-be69-d73261436928";
 const carpetCleaning = "https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/Residential%2FcarpetCleaning.jpeg?alt=media&token=de847ff6-ca9b-404d-aa2e-3028c4a7b636";
+
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -15,7 +16,7 @@ import 'swiper/swiper-bundle.css'; // Import the main Swiper CSS file
 import '../workoutSlider.css';
 // import { Navigation } from 'swiper';
 
-const programs = [
+const services = [
   {
     image: moveOutCleaning,
     name: 'Move-out Cleaning',
@@ -31,6 +32,22 @@ const programs = [
   {
     image: carpetCleaning,
     name: 'Carpet Cleaning',
+  },
+  {
+    image: moveOutCleaning,
+    name: 'Offices Buildings',
+  },
+  {
+    image: oneTimeCleaning,
+    name: 'Strata Buildings',
+  },
+  {
+    image: recurringCleaning,
+    name: 'Carpet Cleaning',
+  },
+  {
+    image: carpetCleaning,
+    name: 'Other Cleaning',
   },
   
 ]
@@ -52,7 +69,7 @@ const WorkoutSlider = () => {
       }}
       className='workoutSlider'
     >
-      {programs.map((program, idx) => {
+      {services.map((program, idx) => {
         const { image, name } = program;
         return (
           <SwiperSlide

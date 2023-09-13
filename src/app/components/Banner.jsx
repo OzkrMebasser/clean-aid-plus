@@ -16,10 +16,8 @@ const Banner = () => {
                 Cleaning Services</span> 
                 
                 <span className="block text-shadow">for Homes and Businesses Across Victoria</span>
-             
-              
-               <br />
-              {/* <span className="text-primary-200">{titlePart2}</span> */}
+    
+            
             </h1>
             <p
               className="subtitle max-w-[415px] text-body-md lg:text-body-lg mb-8 text-shadow"

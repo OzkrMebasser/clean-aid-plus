@@ -196,7 +196,8 @@ text-shadow: #000 1px 0 10px;
 }
 
 .bg-banner {
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/cleaningGirls.jpg?alt=media&token=065b0b42-f179-49f8-82be-d5dbc809eab5');
+  /* background-image: url('https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/cleaningGirls.jpg?alt=media&token=065b0b42-f179-49f8-82be-d5dbc809eab5'); */
+background-image: url('https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/cleaningGif.gif?alt=media&token=b009a56f-f2c2-4491-a645-d7fe2a073542');
 }
 .bgFaq{
   background-image: url('https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/faqbg.svg?alt=media&token=498132aa-0eec-4ae8-9ba3-15a616770403');
