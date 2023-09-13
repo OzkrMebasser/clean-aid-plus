@@ -37,7 +37,7 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="bg-white shadow-lg rounded-b-xl lg:rounded-r-xl lg:rounded-l-none p-4 hover:bg-black hover:text-[#fff]">
+          <div className="text-center bg-white shadow-lg rounded-b-xl lg:rounded-r-xl lg:rounded-l-none p-4 hover:bg-black hover:text-[#fff]">
             <h1 className="text-[#147EFB] font-bold text-xl pb-4 hover:text-[#14fb72]">
               WSBC (WorkSafeBC) Certified
             </h1>
@@ -59,8 +59,8 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="bg-white shadow-lg rounded-b-xl lg:rounded-r-xl lg:rounded-l-none p-4 hover:bg-black hover:text-[#fff]">
-            <h1 className="text-[#147EFB] font-bold text-xl pb-4 hover:text-[#14fb72]">
+          <div className="text-center bg-white shadow-lg rounded-b-xl lg:rounded-r-xl lg:rounded-l-none p-4 hover:bg-black hover:text-[#fff]">
+            <h1 className=" text-[#147EFB] font-bold text-xl pb-4 hover:text-[#14fb72]">
             HEPA Filter Vacuums
             </h1>
             <p>
@@ -80,8 +80,8 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="bg-white shadow-lg rounded-b-xl lg:rounded-r-xl lg:rounded-l-none p-4 hover:bg-black hover:text-[#fff]">
-            <h1 className="text-[#147EFB] font-bold text-xl pb-4 hover:text-[#14fb72]">
+          <div className="text-center bg-white shadow-lg rounded-b-xl lg:rounded-r-xl lg:rounded-l-none p-4 hover:bg-black hover:text-[#fff]">
+            <h1 className=" text-[#147EFB] font-bold text-xl pb-4 hover:text-[#14fb72]">
             Trained and Bonded Staff
             </h1>
             <p>
