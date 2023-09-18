@@ -12,14 +12,14 @@ const About = () => {
   const router = useRouter();
 
   return (
-    <section className="py-[80px] md:py-[110px] lg:pt-[140px] lg:pb-[180px]">
-      <div className="container mx-auto px-[20px] lg:px-[135px]">
+    <section className="bg-black  ">
+      <div className="container mx-auto px-[20px] lg:px-[135px] pb-[80px]  ">
         <div
           className="section-title-group justify-start"
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <h2 className="h2 section-title uppercase font-black">
+          <h2 className="h2 section-title uppercase font-black pt-8">
             Benefits
             <span className="text-[#147EFB]">
               <BiPlusMedical className="text-lg" />
@@ -27,7 +27,7 @@ const About = () => {
           </h2>
         </div>
         {/*WorkSafeBC*/}
-        <div data-aos="fade-right" className="shadow-lg flex flex-col md:flex-row bg-white rounded-xl md:bg-transparent shadow-black/20 md:shadow-none mb-6">
+        <div data-aos="" className="shadow-lg flex flex-col md:flex-row bg-white rounded-xl md:bg-transparent shadow-black/20 md:shadow-none mb-6">
           <div className=" flex justify-center md:justify-end">
             <div className="shadow-lg w-full p-4 lg:w-[250px] lg:p-0 bg-white rounded-t-xl lg:rounded-l-xl lg:rounded-r-none  flex justify-center items-center">
               <img
@@ -49,7 +49,7 @@ const About = () => {
           </div>
         </div>
         {/*HEPA Filters*/}
-        <div data-aos="fade-left" className="shadow-lg flex flex-col md:flex-row bg-white rounded-xl md:bg-transparent shadow-black/20 md:shadow-none mb-6">
+        <div data-aos="" className="shadow-lg flex flex-col md:flex-row bg-white rounded-xl md:bg-transparent shadow-black/20 md:shadow-none mb-6">
           <div className="flex justify-center md:justify-end">
           <div className="shadow-lg w-full p-4 lg:w-[250px] lg:p-0 bg-white rounded-t-xl lg:rounded-l-xl lg:rounded-r-none  flex justify-center items-center">
               <img
@@ -70,7 +70,7 @@ const About = () => {
         </div>
         
          {/*Staff trained*/}
-         <div data-aos="fade-right" className="shadow-lg flex flex-col md:flex-row bg-white rounded-xl md:bg-transparent shadow-black/20 md:shadow-none mb-6">
+         <div data-aos="" className="shadow-lg flex flex-col md:flex-row bg-white rounded-xl md:bg-transparent shadow-black/20 md:shadow-none ">
           <div className="flex justify-center md:justify-end">
           <div className="shadow-lg w-full p-4 lg:w-[250px] lg:p-0 bg-white rounded-t-xl lg:rounded-l-xl lg:rounded-r-none  flex justify-center items-center">
               <img
@@ -84,11 +84,12 @@ const About = () => {
             <h1 className=" text-[#147EFB] font-bold text-xl pb-4 hover:text-[#14fb72]">
             Trained and Bonded Staff
             </h1>
-            <p>
+            <p >
             Our cleaning staff are fully trained according to WSBC standards and bonded for your peace of mind. We follow detailed cleaning procedures to deliver consistent, high quality results you can rely on.
             </p>
           </div>
         </div>
+     
         {/* <button
           className="bg-[#147EFB] text-white  rounded-lg px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
           data-aos="fade-down"

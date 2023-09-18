@@ -203,3 +203,13 @@ background-image: url('https://firebasestorage.googleapis.com/v0/b/clean-aid-plu
   background-image: url('https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/faqbg.svg?alt=media&token=498132aa-0eec-4ae8-9ba3-15a616770403');
 
 }
+
+
+@keyframes rotate-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

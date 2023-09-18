@@ -1,13 +1,13 @@
 "use client"
 import { useEffect, useState } from "react";
-
-import Nav from "./Nav";
-import NavMobile from "./NavMobile";
+import Link from "next/link";
+import DarkNav from "./DarkNav";
+import DarkNavMobile from "./DarkNavMobile";
 import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 
 
 
-const Header = () => {
+const AboutHeader = () => {
 
   const blueLogo = "https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/blueLogoCleanAid.png?alt=media&token=c12abe93-174e-4a7f-89cb-ea1717912eff";
   // const greenLogo = "https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/greenLogoCleanAid.png?alt=media&token=5ff7e321-3171-4a15-b2f0-87bd5fe54f71";
@@ -46,15 +46,15 @@ const Header = () => {
   return (
     <header
       className={`${
-        isActive ? " bg-[#ffffff] py-[16px] shadow-md mb-4" : "py-[16px] bg-[#00000031] lg:bg-transparent "
+        isActive ? " bg-[#ffffff] py-[16px] shadow-md mb-4" : "py-[16px]  bg-black "
       } fixed max-w-[1440px] left-0 right-0 mx-auto flex justify-between items-center px-[20px] lg:px-[80px] z-30 transition-all duration-300`}
     >
-      <a href="#">
+      <Link href="/">
         <img className="h-14 " src={blueLogo} alt="logo CleanAid+" />
-      </a>
+      </Link>
      {/* desktop Navigation */}
     
-      <Nav  />
+      <DarkNav  />
 
 
       <div
@@ -69,9 +69,9 @@ const Header = () => {
       </div>
 
       {/* nav mobile - hide on desktop */}
-      <NavMobile navMobile={navMobile} />
+      <DarkNavMobile navMobile={navMobile} />
     </header>
   );
 };
 
-export default Header;
+export default AboutHeader;

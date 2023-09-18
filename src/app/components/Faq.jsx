@@ -43,6 +43,7 @@ const Faq = () => {
 
   return (
     <section className='section mt-[50px]  mb-[80px] lg:mb-0'>
+      
       <div className='max-w-[768px] mx-auto lg: bg-no-repeat bg-custom bg-center  '>
         {/* section title */}
         <div
@@ -52,7 +53,7 @@ const Faq = () => {
           data-aos-delay='200'
         >
          
-          <h2 className='h2 section-title lg:mt-[100px]'>
+         <h2 className='h2 section-title uppercase font-black'>
           FAQ<span className='text-[#147EFB]'><BiPlusMedical className="text-lg"/></span>
           </h2>
         </div>

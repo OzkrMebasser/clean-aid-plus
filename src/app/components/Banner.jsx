@@ -15,7 +15,7 @@ const Banner = () => {
               <span className='shining text-[#0eb04f] font-black green-text-shadow'>
                 Cleaning Services</span> 
                 
-                <span className="block text-shadow">for Homes and Businesses Across Victoria</span>
+                <span className="block text-shadow">for Businesses Across Victoria</span>
     
             
             </h1>
