@@ -7,18 +7,18 @@ const blueLogo =
 const Footer = () => {
   // const { logo, copyrightText } = footer;
   return (
-    <footer className="bg-neutral-500 h-[125px] md:h-[195px] px-[20px] ">
+    <footer className="bg-neutral-500 h-[200px] lg:h-[125px] md:h-[195px] px-[20px] items-center">
       <div
         className="container mx-auto flex flex-col md:flex-row justify-between items-center"
         data-aos='fade-up'
         data-aos-delay='200'
       >
-        <p className="text-neutral-300 text-sm mb-4 md:mb-4 mt-12 lg:mt-18">
+        <p className="text-neutral-300 text-sm mb-4 md:mb-4 mt-16 lg:mt-24 lg:mb-20">
           All rights reserved.{" "}
           <img className="h-4 inline" src={blueLogo} alt="Blue Logo" /> 2023.
         </p>
 
-        <ul className="flex flex-wrap gap-4">
+        <ul className="lg:mt-[5.5rem] flex flex-wrap gap-4">
           {/* Social media icons (Replace with your actual social media icons) */}
           <li>
             <a href="#">
@@ -39,7 +39,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-           <p className="text-[10px] text-center ">
+           <p className="text-[10px] text-center lg:mt-[5.5rem] ">
           <a href="#">Made with &#x1F9E1; by Ozkr Mebasser</a>.
         </p>
       </div>
