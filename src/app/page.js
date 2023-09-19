@@ -1,5 +1,7 @@
 "use client"
 import { useEffect } from 'react';
+
+
 // import aos
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -7,7 +9,7 @@ import 'aos/dist/aos.css';
 // import components
 
 
-
+import ActionButton from "./components/ActionButton/ActionButton";
 import Banner from "./components/Banner";
 import Header from './components/Headers/TransHeader/Header';
 import About from './components/About/About';
@@ -43,7 +45,7 @@ export default function Home() {
      
       <CallUsNow />
       <Footer />
-  
+      <ActionButton/>
     </div>
     </>
   

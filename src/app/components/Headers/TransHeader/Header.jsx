@@ -1,8 +1,8 @@
 "use client"
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Nav from "../../Nav";
-import NavMobile from "../../NavMobile";
+import Nav from "./Nav";
+import NavMobile from "./NavMobile";
 import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 
 

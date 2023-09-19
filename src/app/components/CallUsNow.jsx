@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { AiTwotonePhone } from "react-icons/ai";
 
 const Join = () => {
@@ -37,13 +38,14 @@ const Join = () => {
             <p className="text-shadow text-body-sm md:text-body-md text-white mb-4 lg:mb-6 max-w-[348px] md:max-w-[470px] lg:max-w-[492px] mt-2">
             Our professional commercial cleaning services allow you to devote your time and energy to managing your core business operations and enhancing your productivity.
             </p>
-            <button className="bg-[#147EFB] text-white rounded-lg px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-              Call Us Now{" "}
+            <button className="bg-[#147EFB] border-2 border-[white] text-white rounded-lg px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+              
+              <Link href="tel:+17786779340">Call Us Now{" "}</Link>
               <AiTwotonePhone className="text-2xl inline ml-2 align-middle" />
             </button>
-            <button className="bg-[#147EFB] text-white rounded-lg px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-              Services{" "}
-              <AiTwotonePhone className="text-2xl inline ml-2 align-middle" />
+            <button className="bg-[black] border-2 border-[white] ml-4 text-white rounded-lg px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+              
+              <Link href="/services">Our Services</Link>
             </button>
           </div>
         </div>

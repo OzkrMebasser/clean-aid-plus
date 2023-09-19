@@ -4,7 +4,7 @@ import { BiPlusMedical } from "react-icons/bi";
 
 
 
-import Accordion from './Accordion';
+import Accordion from '../Accordion';
 
 const accordions= [
   {

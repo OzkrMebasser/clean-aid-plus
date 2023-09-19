@@ -1,5 +1,4 @@
-"use client"
-import ActionButton from "./components/ActionButton/ActionButton"
+
 import './globals.css'
 import { Inter } from 'next/font/google';
 
@@ -17,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
  
       <body className={inter.className}>
-        <ActionButton/>
+       
         {children}
        
       </body>

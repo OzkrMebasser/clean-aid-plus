@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { BiPlusMedical } from "react-icons/bi";
 import { GoLinkExternal } from "react-icons/go";
-import Faq from "../components/Faq";
+import Faq from "../components/Faq/Faq";
 
 const blueLogo =
   "https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/textBlueLogo.png?alt=media&token=41c8690e-2125-4f30-8383-1d689c8bce01";

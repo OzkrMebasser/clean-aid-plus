@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-
 const NavMobile = ({ navMobile }) => {
   const router = useRouter();
 
@@ -13,8 +12,6 @@ const NavMobile = ({ navMobile }) => {
       } w-full fixed top-0 left-0 right-0 bg-neutral-500 -bottom-12 -z-10 lg:hidden overflow-hidden transition-all h-0`}
     >
       <ul className="w-full top-0 left-0 h-full flex flex-col justify-center items-center gap-y-8">
-    
-
         <li>
           <Link className="text-white text-body-md" href="/">
             Home
@@ -36,12 +33,11 @@ const NavMobile = ({ navMobile }) => {
           </Link>
         </li>
         <li>
-          <a className="text-white text-body-md" href="#">
+          <Link href="/contact" className="text-white text-body-md">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
-      
     </nav>
   );
 };

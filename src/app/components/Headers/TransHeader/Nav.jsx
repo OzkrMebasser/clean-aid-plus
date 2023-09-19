@@ -36,7 +36,7 @@ const Nav = () => {
 <Link  href="/about" className="underline-hover-effect-green  hover:text-[#147EFB] transition">About</Link>
 <Link  href="/services" className="underline-hover-effect-green  hover:text-[#147EFB] transition">Services</Link>
 <Link  href="/blog" className="underline-hover-effect-green  hover:text-[#147EFB] transition">Blog</Link>
-<a  href="#" className="underline-hover-effect-green  hover:text-[#147EFB] transition">Contact</a>
+<Link  href="/contact" className="underline-hover-effect-green  hover:text-[#147EFB] transition">Contact</Link>
 
 
     </nav>
