@@ -9,7 +9,7 @@ import { GoX } from "react-icons/go";
 
 import './ActionButton.css'
 
-const FloatContact = () => {
+const ActionButton = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -37,7 +37,7 @@ const FloatContact = () => {
         <div   
         // data-aos="fade-right"
          className="roll-in-left text-gradient-to-br from-blue-600 via-blue-500 to-blue-800 h-auto w-[17.5rem] border-4 border-[#147EFB] border-x-[#76b4dd] text-[#147EFB] font-bold bg-white  rounded-lg px-4 py-2 hover:bg-black hover:text-[white] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 text-xl fixed z-50 items-center  flex justify-center   m-auto  p-3 left-8 bottom-[10.5rem]">
-          <Link href="/book">Book a Consultation</Link>
+          <Link href="/contact">Book a Consultation</Link>
           <BsCalendar2Check className="text-2xl font-bold inline ml-2 align-middle" />
         </div>
       ) : null}
@@ -62,4 +62,4 @@ const FloatContact = () => {
   );
 };
 
-export default FloatContact;
+export default ActionButton;

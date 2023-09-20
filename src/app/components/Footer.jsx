@@ -7,7 +7,7 @@ const blueLogo =
 const Footer = () => {
   // const { logo, copyrightText } = footer;
   return (
-    <footer className="bg-neutral-500 h-[200px] lg:h-[125px] md:h-[195px] px-[20px] items-center">
+    <footer className="bg-neutral-500 h-[200px] lg:h-[250px] md:h-[195px] px-[20px] items-center">
       <div
         className="container mx-auto flex flex-col md:flex-row justify-between items-center"
         data-aos='fade-up'
@@ -39,7 +39,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-           <p className="text-[10px] text-center lg:mt-[5.5rem] ">
+           <p className="text-[10px] mt-4 text-center lg:mt-[5.5rem] ">
           <a href="#">Made with &#x1F9E1; by Ozkr Mebasser</a>.
         </p>
       </div>

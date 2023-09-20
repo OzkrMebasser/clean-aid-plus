@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import DarkHeader from "../components/Headers/DarkHeader/DarkHeader";
+import ActionButton from "../components/ActionButton/ActionButton";
 import Benefits from "../components/Befefits";
 import Footer from "../components/Footer";
 
@@ -114,6 +115,7 @@ const Aboutpage = () => {
         <Benefits />
         </section>
         <Faq />
+        <ActionButton/>
         <Footer />
         
      
