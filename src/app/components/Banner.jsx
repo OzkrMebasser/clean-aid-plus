@@ -1,5 +1,10 @@
 "use client"
+import Link from "next/link";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+
+
+
+
 const Banner = () => {
  
   return (
@@ -26,10 +31,10 @@ const Banner = () => {
             We take cleanliness seriously, ensuring your spaces are spotless and inviting.
             </p>
             <button
-              className="bg-[#147EFB] text-white rounded-lg px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+              className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mt-6 border-[1.5px] border-white bg-[#147EFB] text-white rounded-lg px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
               data-aos="fade-down"
               data-aos-delay="700">
-              Book a Consultation
+              <Link href="/contact">Book a Consultation</Link>
               <IoIosArrowDroprightCircle className="text-2xl inline ml-2 align-middle" />
             </button>
           </div>

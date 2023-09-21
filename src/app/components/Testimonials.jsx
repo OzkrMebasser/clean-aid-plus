@@ -65,7 +65,21 @@ const Community = () => {
             data-aos-offset='200'
             data-aos-delay='300'
           >
-            <TestimoniaslSlider testimonials={testimonials} />
+                  <section class="section" data-aos="zoom-in-up" >
+          <div id="craouselContainer" class="swiper-container">
+            <h3 class="h3 section-title uppercase">
+              What Our Customers Are Saying
+            </h3>
+            {/* <!-- <a href="https://maps.app.goo.gl/jKhhzYJuXxpW4C7G6">
+              <img class="g-reviews" src="./assets/images/EsquireGoogleReviews.JPG" alt="google reviews">
+            </a> --> */}
+
+            <div class="swiper-wrapper" id="slideHolder">
+              {/* <!-- Slides --> */}
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
           </div>
         </div>
       </div>

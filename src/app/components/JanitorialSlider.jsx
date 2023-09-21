@@ -34,7 +34,7 @@ const services = [
   
 ]
 
-const WorkoutSlider = () => {
+const JanitorialSlider = () => {
  
   return (
     <Swiper
@@ -51,14 +51,14 @@ const WorkoutSlider = () => {
       }}
       className='workoutSlider'
     >
-      {services.map((program, idx) => {
-        const { image, name } = program;
+      {services.map((service, idx) => {
+        const { image, name } = service;
         return (
           <SwiperSlide
             className='max-w-[320px] max-h-[320px] relative bg-purple-200'
             key={idx}
           >
-            <img className='w-full h-full object-cover' src={image} alt='' />
+            <img className='w-full h-full object-cover' src={image} alt={name} />
             <div className='absolute left-[20px] bottom-[20px] bg-white h-[26px] px-[14px] flex items-center justify-center rounded-[1px]'>
               <div className='font-primary font-semibold text-sm text-neutral-500'>
                 {name}
@@ -71,4 +71,4 @@ const WorkoutSlider = () => {
   );
 };
 
-export default WorkoutSlider;
+export default JanitorialSlider;
