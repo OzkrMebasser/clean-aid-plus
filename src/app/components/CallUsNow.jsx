@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { AiTwotonePhone } from "react-icons/ai";
 
-const Join = () => {
+const CallUsNow = () => {
   return (
     <section className="bg-neutral-500 min-h-[537px]">
       <div className="container mx-auto">
@@ -43,7 +43,7 @@ const Join = () => {
               <Link href="tel:+17786779340">Call Us Now{" "}</Link>
               <AiTwotonePhone className="text-2xl inline ml-2 align-middle" />
             </button>
-            <button className="bg-[black] border-2 border-[white] ml-4 text-white rounded-lg px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+            <button className="mb-10 lg:mb-2 bg-[black] border-2 border-[white] ml-4 text-white rounded-lg px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
               
               <Link href="/services">Our Services</Link>
             </button>
@@ -54,4 +54,4 @@ const Join = () => {
   );
 };
 
-export default Join;
+export default CallUsNow;

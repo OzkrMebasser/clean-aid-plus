@@ -1,18 +1,20 @@
 "use client";
 import { useEffect } from "react";
+import Link from "next/link";
 // import aos
 import Aos from "aos";
 import "aos/dist/aos.css";
 import DarkHeader from "../components/Headers/DarkHeader/DarkHeader";
 import ActionButton from "../components/ActionButton/ActionButton";
 import Benefits from "../components/Befefits";
-import Footer from "../components/Footer";
+import Footer from '../components/Footer/FooterInfo/Footer';
 
 // icons
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { BiPlusMedical } from "react-icons/bi";
 import { GoLinkExternal } from "react-icons/go";
 import Faq from "../components/Faq/Faq";
+import "../globals.css"
 
 const blueLogo =
   "https://firebasestorage.googleapis.com/v0/b/clean-aid-plus.appspot.com/o/textBlueLogo.png?alt=media&token=41c8690e-2125-4f30-8383-1d689c8bce01";
@@ -23,7 +25,11 @@ const Aboutpage = () => {
   }, []);
 
   return (
-    <div className="bg-[#f8f8f8]">
+    <>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div className="">
       <DarkHeader />
 
       <section className=" pt-[80px] md:py-[110px] lg:pt-[140px] lg:pb-[20px]">
@@ -48,7 +54,7 @@ const Aboutpage = () => {
             alt="about us"
           />
           <p
-            className="md:text-body-md mb-6"
+            className="md:text-body-md mb-6  font-semibold text-base"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -62,7 +68,7 @@ const Aboutpage = () => {
             home.
           </p>
           <p
-            className="md:text-body-md mb-6"
+            className="md:text-body-md mb-6  font-semibold text-base"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -73,7 +79,7 @@ const Aboutpage = () => {
             pets.
           </p>
           <p
-            className="md:text-body-md mb-6"
+            className="md:text-body-md mb-6  font-semibold text-base"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -84,7 +90,7 @@ const Aboutpage = () => {
           </p>
 
           <p
-            className="md:text-body-md mb-6"
+            className="md:text-body-md mb-6  font-semibold text-base"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -93,11 +99,12 @@ const Aboutpage = () => {
           </p>
 
           <button
-            className=" bg-[#147EFB] text-white rounded-lg px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className=" border-2 border-white bg-[#147EFB] text-white rounded-lg px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
             data-aos="fade-down"
             data-aos-delay="700"
           >
-            Book a Consultation
+          <Link href="/contact"> Book a Consultation</Link>
+       
             <IoIosArrowDroprightCircle className="text-2xl inline ml-2 align-middle" />
           </button>
         </div>
@@ -120,6 +127,7 @@ const Aboutpage = () => {
         
      
     </div>
+    </>
   );
 };
 

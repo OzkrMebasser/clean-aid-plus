@@ -16,11 +16,12 @@ import About from "./components/About/About";
 
 import Janitorial from "./components/Janitorial";
 // import Pricing from './components/Pricing';
-import Testimonials from "./components/Testimonials";
+import Testimonials from "./components/Testimonials/Testimonials";
 // import ActionButton from './components/ActionButton/ActionButton';
 
 import CallUsNow from "./components/CallUsNow";
-import Footer from "./components/Footer";
+import FooterInfo from "./components/Footer/FooterInfo/Footer";
+// import Footer from "./components/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -38,10 +39,11 @@ export default function Home() {
         <About />
      
         <Janitorial />
-      {/* <ServicesSlider/> */}
+      <Testimonials/>
 
         <CallUsNow />
-        <Footer />
+        <FooterInfo/>
+        {/* <Footer /> */}
         <ActionButton />
       </div>
     </>

@@ -19,7 +19,7 @@ const About = () => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <h2 className="h2 section-title uppercase font-black pt-8">
+          <h2 className="h2 text-white section-title uppercase font-black pt-8">
             Benefits
             <span className="text-[#147EFB]">
               <BiPlusMedical className="text-lg" />
@@ -27,7 +27,7 @@ const About = () => {
           </h2>
         </div>
         {/*WorkSafeBC*/}
-        <div data-aos="" className="shadow-lg flex flex-col md:flex-row bg-white rounded-xl md:bg-transparent shadow-black/20 md:shadow-none mb-6">
+        <div data-aos="zoom-in-up" className="shadow-lg flex flex-col md:flex-row bg-white rounded-xl md:bg-transparent shadow-black/20 md:shadow-none mb-6">
           <div className=" flex justify-center md:justify-end">
             <div className="shadow-lg w-full p-4 lg:w-[250px] lg:p-0 bg-white rounded-t-xl lg:rounded-l-xl lg:rounded-r-none  flex justify-center items-center">
               <img
@@ -49,7 +49,7 @@ const About = () => {
           </div>
         </div>
         {/*HEPA Filters*/}
-        <div data-aos="" className="shadow-lg flex flex-col md:flex-row bg-white rounded-xl md:bg-transparent shadow-black/20 md:shadow-none mb-6">
+        <div data-aos="zoom-in-up" className="shadow-lg flex flex-col md:flex-row bg-white rounded-xl md:bg-transparent shadow-black/20 md:shadow-none mb-6">
           <div className="flex justify-center md:justify-end">
           <div className="shadow-lg w-full p-4 lg:w-[250px] lg:p-0 bg-white rounded-t-xl lg:rounded-l-xl lg:rounded-r-none  flex justify-center items-center">
               <img
@@ -70,7 +70,7 @@ const About = () => {
         </div>
         
          {/*Staff trained*/}
-         <div data-aos="" className="shadow-lg flex flex-col md:flex-row bg-white rounded-xl md:bg-transparent shadow-black/20 md:shadow-none ">
+         <div data-aos="zoom-in-up" className="shadow-lg flex flex-col md:flex-row bg-white rounded-xl md:bg-transparent shadow-black/20 md:shadow-none ">
           <div className="flex justify-center md:justify-end">
           <div className="shadow-lg w-full p-4 lg:w-[250px] lg:p-0 bg-white rounded-t-xl lg:rounded-l-xl lg:rounded-r-none  flex justify-center items-center">
               <img

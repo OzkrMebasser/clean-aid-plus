@@ -5,6 +5,9 @@ import { BiPlusMedical } from "react-icons/bi";
 const Blog = () => {
   return (
     <>
+       <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
       <section className="py-[80px] md:py-[110px] lg:pt-[140px] lg:pb-[180px]">
         <div className=" mx-auto px-[20px] lg:px-[135px]">
           <div className="flex flex-wrap -mx-4 ">
